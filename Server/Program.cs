@@ -13,6 +13,10 @@ public class Program
                                                            .EnableDetailedErrors()
                                                            .EnableSensitiveDataLogging()
                                                            .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+
+        DbContextOptionsBuilder dbContextOptionsBuilder = new DbContextOptionsBuilder();
+        dbContextOptionsBuilder.UseLazyLoadingProxies();
+
         WebApplication app = builder.Build();
 
         if (app.Environment.IsDevelopment())
