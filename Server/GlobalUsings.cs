@@ -1,4 +1,6 @@
-﻿global using Microsoft.EntityFrameworkCore;
+﻿global using FinancialTracker.Server;
+
+global using Microsoft.EntityFrameworkCore;
 global using Microsoft.AspNetCore.Mvc;
 global using FinancialTracker.Shared;
 global using Microsoft.EntityFrameworkCore.Metadata.Builders;
